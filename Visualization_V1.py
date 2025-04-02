@@ -3,8 +3,8 @@ import cv2
 import matplotlib.pyplot as plt
 import os
 
-json_path = "/home/utkarsh/Desktop/Sem-2/Deep Learning/2024PGCSDS14_Utkarsh Saxena_DeepLearning/coco_dataset/annotations/instances_train2017.json"
-train_path = '/home/utkarsh/Downloads/train2017/'
+json_path = "data/annotations/instances_train2017.json"
+train_path = 'data/train2017/'
 
 with open(json_path, 'r') as f:
     coco_data = json.load(f)

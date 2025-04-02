@@ -48,9 +48,5 @@ for i in tqdm.tqdm(data['images']):
     if img["bbox"] != 0:
         l.append(img)
 
-<<<<<<< HEAD
-with open("Max_Area_BB_Train.json",'w+') as file:
-=======
 with open("data/Max_Area_BB_train.json",'w+') as file:
->>>>>>> origin/ner
     json.dump(l, file, indent=4)

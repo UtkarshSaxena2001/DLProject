@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 from collections import Counter
 
-train_path = "/home/utkarsh/Desktop/Sem-2/Deep Learning/2024PGCSDS14_Utkarsh Saxena_DeepLearning/coco_dataset/train2017/"
+train_path = "data/train2017/"
 image_files = [os.path.join(train_path, f) for f in os.listdir(train_path) if f.endswith(('.jpg', '.png', '.jpeg'))]
 image_sizes = []
 

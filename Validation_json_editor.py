@@ -34,7 +34,7 @@ def get_largest_bounding_box(id:int):
         return bbox,cat
 
 # Open and read the JSON file
-with open("data/annotations_trainval2017/annotations/instances_val2017.json", "r") as file:
+with open("/home/utkarsh/Desktop/Sem-2/Deep Learning/2024PGCSDS14_Utkarsh Saxena_DeepLearning/coco_dataset/annotations/instances_val2017.json", "r") as file:
     data = json.load(file)  # Parses JSON into a Python dictionary
 
 # Output the JSON content as a Python dictionary

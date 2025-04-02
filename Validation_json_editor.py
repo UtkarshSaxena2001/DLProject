@@ -47,5 +47,5 @@ for i in data['images']:
     if img["bbox"] != 0:
         l.append(img)
 
-with open("Max_Area_BB_validation.json",'w+') as file:
+with open("data/Max_Area_BB_validation.json",'w+') as file:
     json.dump(l, file, indent=4)

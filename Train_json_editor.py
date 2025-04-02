@@ -48,5 +48,5 @@ for i in tqdm.tqdm(data['images']):
     if img["bbox"] != 0:
         l.append(img)
 
-with open("Max_Area_BB_validation.json",'w+') as file:
+with open("Max_Area_BB_Train.json",'w+') as file:
     json.dump(l, file, indent=4)

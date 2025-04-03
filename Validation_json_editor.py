@@ -41,9 +41,10 @@ with open("data/annotations/instances_val2017.json", "r") as file:
 l = []
 for i in data['images']:
     img = {}
-    img["img_id"] = i
+    img["img_id"] = i["file_name"]
     img['size'] = get_image_size(i["id"])
     img["bbox"],img["category_id"] = get_largest_bounding_box(i["id"])
+    img["label"] = get_category_name(img["category_id"])
     if img["bbox"] != 0:
         l.append(img)
 

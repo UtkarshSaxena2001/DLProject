@@ -1,5 +1,5 @@
 import json
-import tqdm
+from tqdm import tqdm
 
 def get_img_name(id:int):
     for i in data['images']:
@@ -35,16 +35,17 @@ def get_largest_bounding_box(id:int):
         return bbox,cat
 
 # Open and read the JSON file
-with open("/home/utkarsh/Desktop/Sem-2/Deep Learning/2024PGCSDS14_Utkarsh Saxena_DeepLearning/coco_dataset/annotations/instances_train2017.json", "r") as file:
+with open("data/annotations/instances_train2017.json", "r") as file:
     data = json.load(file)  # Parses JSON into a Python dictionary
 
 # Output the JSON content as a Python dictionary
 l = []
-for i in tqdm.tqdm(data['images']):
+for i in tqdm(data['images']):
     img = {}
-    img["img_id"] = i
+    img["img_id"] = i["file_name"]
     img['size'] = get_image_size(i["id"])
     img["bbox"],img["category_id"] = get_largest_bounding_box(i["id"])
+    img["label"] = get_category_name(img["category_id"])
     if img["bbox"] != 0:
         l.append(img)
 

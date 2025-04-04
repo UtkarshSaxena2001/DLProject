@@ -1,13 +1,16 @@
-import json
+import json as js
 import cv2
 import matplotlib.pyplot as plt
 import os
 
-json_path = "data/annotations/instances_train2017.json"
-train_path = 'data/train2017/'
+with open("config.json",'r') as file:
+    paths = js.load(file)
+
+json_path = paths["Preprocessed_Train"]
+train_path = paths["Train_resized"]
 
 with open(json_path, 'r') as f:
-    coco_data = json.load(f)
+    coco_data = js.load(f)
 
 annotations = coco_data["annotations"]
 images = coco_data["images"]

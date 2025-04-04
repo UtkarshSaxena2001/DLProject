@@ -1,6 +1,10 @@
 import os
 from PIL import Image
 from tqdm import tqdm
+import json as js
+
+with open("config.json",'r') as file:
+    paths = js.load(file)
 
 def resize_images(input_folder, output_folder, size=(256, 256)):
     if not os.path.exists(output_folder):
@@ -18,10 +22,10 @@ def resize_images(input_folder, output_folder, size=(256, 256)):
             print(f"Skipping {filename}: {e}")
 
 
-input_folder_train = "data/train2017/" 
-output_folder_train = "data/resized_train2017"
-input_folder_Val = "data/val2017/" 
-output_folder_Val = "data/resized_val2017"
+input_folder_train = paths["Train_folder"] 
+output_folder_train = paths["Train_resized"]
+input_folder_Val = paths["Validation_folder"] 
+output_folder_Val = paths["Validation_resized"]
 
 if os.path.exists(input_folder_train):
     resize_images(input_folder_train, output_folder_train)

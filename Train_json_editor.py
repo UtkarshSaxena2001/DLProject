@@ -1,4 +1,4 @@
-import json
+import json as js
 from tqdm import tqdm
 
 def get_img_name(id:int):
@@ -34,11 +34,12 @@ def get_largest_bounding_box(id:int):
         cat = cat_list[area_list.index(max_area)]
         return bbox,cat
 
-# Open and read the JSON file
-with open("data/annotations/instances_train2017.json", "r") as file:
-    data = json.load(file)  # Parses JSON into a Python dictionary
+with open("config.json",'r') as file:
+    paths = js.load(file)
 
-# Output the JSON content as a Python dictionary
+with open(paths["Max_Area_Train_Json"], "r") as file:
+    data = js.load(file)  
+
 l = []
 for i in tqdm(data['images']):
     img = {}
@@ -49,5 +50,5 @@ for i in tqdm(data['images']):
     if img["bbox"] != 0:
         l.append(img)
 
-with open("data/Max_Area_BB_train.json",'w+') as file:
-    json.dump(l, file, indent=4)
+with open(paths["Preprocessed_Train"],'w+') as file:
+    js.dump(l, file, indent=4)

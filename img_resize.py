@@ -17,11 +17,18 @@ def resize_images(input_folder, output_folder, size=(256, 256)):
         except Exception as e:
             print(f"Skipping {filename}: {e}")
 
-if __name__ == "__main__":
-    fol = input("which folder to resize: ")
-    input_folder = f"data/{fol}/" 
-    output_folder = f"data/resized_{fol}"  
-    if os.path.exists(input_folder):
-        resize_images(input_folder, output_folder)
-    else: 
-        print("Wrong path")
+
+input_folder_train = "data/train2017/" 
+output_folder_train = "data/resized_train2017"
+input_folder_Val = "data/val2017/" 
+output_folder_Val = "data/resized_val2017"
+
+if os.path.exists(input_folder_train):
+    resize_images(input_folder_train, output_folder_train)
+else: 
+    print("Wrong path")
+
+if os.path.exists(input_folder_Val):
+    resize_images(input_folder_Val, output_folder_Val)
+else: 
+    print("Wrong path")

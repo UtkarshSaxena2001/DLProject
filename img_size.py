@@ -10,7 +10,7 @@ def get_image_dimensions(folder_path):
         
         try:
             with Image.open(file_path) as img:
-                dimensions.append(img.size)  # (width, height)
+                dimensions.append(img.size)  
         except Exception as e:
             print(f"Skipping {filename}: {e}")
     
@@ -18,12 +18,8 @@ def get_image_dimensions(folder_path):
         print("No valid images found in the folder.")
         return None, None
     
-    # Find the maximum dimensions
     max_dimensions = max(dimensions, key=lambda x: x[0] * x[1])
-    
-    # Find the most frequent dimensions
     most_common_dimensions, _ = Counter(dimensions).most_common(1)[0]
-    
     return max_dimensions, most_common_dimensions
 
 if __name__ == "__main__":

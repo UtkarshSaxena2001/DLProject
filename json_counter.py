@@ -2,8 +2,7 @@ import json as js
 
 with open("config.json",'r') as file:
     paths = js.load(file)
-    
-# Add "Train_Label_Frequency" and "Validation_Label_Frequency" in your config file
+
 train_json_path = paths["Preprocessed_Train_json"]
 val_json_path = paths["Preprocessed_Validation_json"]
 Train_Label_Frequency = paths["Train_Label_Frequency"]

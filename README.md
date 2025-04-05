@@ -17,8 +17,8 @@ Create this config file in the project named as 'config.json'
     "Validation_resized" : "", <br />
     "Max_Area_Train_Json" : "", <br />
     "Max_Area_Val_Json" : "", <br />
-    "Preprocessed_Train" : "", <br />
-    "Preprocessed_Validation" : "", <br />
+    "Preprocessed_Train_json" : "", <br />
+    "Preprocessed_Validation_json" : "", <br />
     "Instance_Train" : "", <br />
     "Instance_Validation" : "" <br />
 }

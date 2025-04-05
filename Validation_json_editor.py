@@ -49,5 +49,5 @@ for i in data['images']:
     if img["bbox"] != 0:
         l.append(img)
 
-with open(paths["Preprocessed_Validation"],'w+') as file:
+with open(paths["Preprocessed_Validation_json"],'w+') as file:
     js.dump(l, file, indent=4)

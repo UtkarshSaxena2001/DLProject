@@ -6,7 +6,7 @@ import os
 with open("config.json",'r') as file:
     paths = js.load(file)
 
-json_path = paths["Preprocessed_Train"]
+json_path = paths["Preprocessed_Train_json"]
 train_path = paths["Train_resized"]
 
 with open(json_path, 'r') as f:

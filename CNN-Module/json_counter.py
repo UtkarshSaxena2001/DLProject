@@ -1,6 +1,6 @@
 import json as js
 
-with open("config.json",'r') as file:
+with open("config_CNN.json",'r') as file:
     paths = js.load(file)
 
 train_json_path = paths["Preprocessed_Train_json"]

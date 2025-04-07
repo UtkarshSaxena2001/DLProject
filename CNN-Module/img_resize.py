@@ -3,7 +3,7 @@ from PIL import Image
 from tqdm import tqdm
 import json as js
 
-with open("config.json",'r') as file:
+with open("config_CNN.json",'r') as file:
     paths = js.load(file)
 
 def resize_images(input_folder, output_folder, size=(256, 256)):

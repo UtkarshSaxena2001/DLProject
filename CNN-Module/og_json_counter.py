@@ -1,6 +1,6 @@
 import json as js
 
-with open("config.json",'r') as file:
+with open("config_CNN.json",'r') as file:
     paths = js.load(file)
     
 og_train_json = paths["Instance_Train"]

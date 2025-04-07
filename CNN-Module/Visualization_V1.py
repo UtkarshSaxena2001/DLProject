@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 import os
 
-with open("config.json",'r') as file:
+with open("config_CNN.json",'r') as file:
     paths = js.load(file)
 
 json_path = paths["Preprocessed_Train_json"]

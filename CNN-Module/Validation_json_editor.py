@@ -33,7 +33,7 @@ def get_largest_bounding_box(id:int):
         cat = cat_list[area_list.index(max_area)]
         return bbox,cat
 
-with open("config.json",'r') as file:
+with open("config_CNN.json",'r') as file:
     paths = js.load(file)
 
 with open(paths["Max_Area_Val_Json"], "r") as file:

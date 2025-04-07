@@ -6,9 +6,9 @@ Creating Captions from Images
 your_location_to_project\\data\\* (for windows) <br />
 config.json (Common for all)
 
-# Config
+# Config_CNN
 
-Create this config file in the project named as 'config.json'
+Create this config file in the CNN-Module named as 'config_CNN.json'
 
 { <br />
     "Train_folder" : "", <br />

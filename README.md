@@ -23,5 +23,7 @@ Create this config file in the CNN-Module named as 'config_CNN.json'
     "Instance_Validation" : "" <br />
     "Train_Label_Frequency" : "" <br />
     "Validation_Label_Frequency" : "" <br />
+    "Cropped_Validation_Images" : "" <br />
+    "Cropped_Train_Images" : "" <br />
 }
 

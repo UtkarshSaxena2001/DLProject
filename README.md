@@ -4,7 +4,8 @@ Creating Captions from Images
 # .gitegnore
 /data/* (for linux) <br />
 your_location_to_project\\data\\* (for windows) <br />
-config.json (Common for all)
+config_CNN.json (Common for all)
+config_RNN.json (Common for all)
 
 # Config_CNN
 

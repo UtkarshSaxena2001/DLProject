@@ -4,7 +4,8 @@ Creating Captions from Images
 # .gitegnore
 /data/* (for linux) <br />
 your_location_to_project\\data\\* (for windows) <br />
-config.json (Common for all)
+config_CNN.json (Common for all)
+config_RNN.json (Common for all)
 
 # Config_CNN
 
@@ -25,3 +26,11 @@ Create this config file in the CNN-Module named as 'config_CNN.json'
     "Validation_Label_Frequency" : "" <br />
 }
 
+# Config_RNN
+
+create this config file in the RNN-Module name as 'Config_RNN.json'
+
+{ <br />
+    "Caption_Train" : "", <br />
+    "Caption_Val" : "" <br /> 
+}

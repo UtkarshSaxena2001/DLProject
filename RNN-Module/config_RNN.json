@@ -1,0 +1,4 @@
+{
+    "Caption_Train" : "/home/rakshit2001/projects/dl_lab/group/DLProject/data/annotations/annotations/captions_train2017.json",
+    "Caption_Val" : "/home/rakshit2001/projects/dl_lab/group/DLProject/data/annotations/annotations/captions_val2017.json"
+}

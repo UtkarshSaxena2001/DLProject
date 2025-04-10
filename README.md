@@ -21,11 +21,19 @@ Create this config file in the CNN-Module named as 'config_CNN.json'
     "Preprocessed_Train_json" : "", <br />
     "Preprocessed_Validation_json" : "", <br />
     "Instance_Train" : "", <br />
-    "Instance_Validation" : "" <br />
-    "Train_Label_Frequency" : "" <br />
-    "Validation_Label_Frequency" : "" <br />
-    "Cropped_Validation_Images" : "" <br />
-    "Cropped_Train_Images" : "" <br />
-    "Saved_Training_Features" : "" <br />
+    "Instance_Validation" : "", <br />
+    "Train_Label_Frequency" : "", <br />
+    "Validation_Label_Frequency" : "", <br />
+    "Cropped_Validation_Images" : "", <br />
+    "Cropped_Train_Images" : "", <br />
+    "Saved_Training_Features" : "", <br />
 }
 
+# Config_RNN
+
+create this config file in the RNN-Module name as 'config_RNN.json'
+
+{ <br />
+    "Caption_Train" : "", <br />
+    "Caption_Val" : "" <br /> 
+}

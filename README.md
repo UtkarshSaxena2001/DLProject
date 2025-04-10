@@ -9,7 +9,7 @@ config_RNN.json (Common for all)
 
 # Config_CNN
 
-Create this config file named as 'config_CNN.json'
+Create this config file in the CNN-Module named as 'config_CNN.json'
 
 { <br />
     "Train_folder" : "", <br />
@@ -28,7 +28,7 @@ Create this config file named as 'config_CNN.json'
 
 # Config_RNN
 
-create this config file named as 'Config_RNN.json'
+create this config file in the RNN-Module name as 'Config_RNN.json'
 
 { <br />
     "Caption_Train" : "", <br />

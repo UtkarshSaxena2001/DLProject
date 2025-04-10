@@ -1,3 +1,4 @@
+data/
 /data/*
 config_CNN.json
 Config_RNN.json

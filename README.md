@@ -21,9 +21,10 @@ Create this config file in the CNN-Module named as 'config_CNN.json'
     "Preprocessed_Train_json" : "", <br />
     "Preprocessed_Validation_json" : "", <br />
     "Instance_Train" : "", <br />
-    "Instance_Validation" : "" <br />
-    "Train_Label_Frequency" : "" <br />
-    "Validation_Label_Frequency" : "" <br />
+    "Instance_Validation" : "", <br />
+    "Train_Label_Frequency" : "", <br />
+    "Validation_Label_Frequency" : "", <br />
+    "Trained_model" : "" <br />
 }
 
 # Config_RNN

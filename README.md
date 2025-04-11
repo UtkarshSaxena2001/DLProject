@@ -33,5 +33,7 @@ create this config file in the RNN-Module name as 'Config_RNN.json'
 
 { <br />
     "Caption_Train" : "", <br />
-    "Caption_Val" : "" <br /> 
+    "Caption_Val" : "", <br /> 
+    "Corpus" : "", <br /> 
+    "Preprocessed_Corpus" : "" <br />
 }

@@ -6,6 +6,7 @@ Creating Captions from Images
 your_location_to_project\\data\\* (for windows) <br />
 config_CNN.json (Common for all) <br />
 config_RNN.json (Common for all)
+best_model_bbox.keras
 
 # Config_CNN
 

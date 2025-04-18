@@ -38,5 +38,6 @@ create this config file in the RNN-Module name as 'Config_RNN.json'
     "Corpus" : "", <br /> 
     "Preprocessed_Corpus" : "", <br />
     "Nouned_Corpus" : "", <br />
-    "Preprocessed_data" : "" <br />
+    "Preprocessed_data" : "", <br />
+    "Padded_preprocessed_data" : "" <br />
 }

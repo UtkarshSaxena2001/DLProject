@@ -3,3 +3,4 @@ data/
 config_CNN.json
 Config_RNN.json
 best_model_bbox.keras
+Caption.keras

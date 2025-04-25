@@ -1,0 +1,17 @@
+Group members
+1 Utkarsh Saxena 2024PGCSDS14
+2 Rakshit Ranjan 2024PGCSDS19
+3 Hrushikesh Mohanty 2024PGCSDS11
+4 Asha Yadav 2024PGCSDS03
+
+Workflow
+
+CNN module:
+util.ipynb -> object_detection.ipynb
+
+RNN module:
+util.ipynb -> training.ipynb
+
+CNN_module_team - Utkarsh and Rakshit
+
+RNN_module_team - Hrushikesh and Asha 
